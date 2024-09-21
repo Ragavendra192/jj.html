@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .featured-news {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .featured-news img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .featured-news div {
+            flex: 1;
+        }
+
+        .featured-news h2 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .featured-news p {
+            font-size: 16px;
+        }
+
+        .news-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .news-article {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .news-article img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .news-article h3 {
+            font-size: 22px;
+            margin-top: 10px;
+        }
+
+        .news-article p {
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>News Today</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">World</a>
+        <a href="#">Politics</a>
+        <a href="#">Technology</a>
+        <a href="#">Sports</a>
+        <a href="#">Entertainment</a>
+    </nav>
+
+    <div class="container">
+        <section class="featured-news">
+            <img src="https://via.placeholder.com/400" alt="Featured News">
+            <div>
+                <h2>Breaking News: Major Event Happens</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+            </div>
+        </section>
+
+        <section class="news-section">
+            <article class="news-article">
+                <img src="https://via.placeholder.com/300" alt="News Image">
+                <h3>News Headline 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio.</p>
+            </article>
+
+            <article class="news-article">
+                <img src="https://via.placeholder.com/300" alt="News Image">
+                <h3>News Headline 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio.</p>
+            </article>
+
+            <article class="news-article">
+                <img src="https://via.placeholder.com/300" alt="News Image">
+                <h3>News Headline 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio.</p>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 News Today. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
